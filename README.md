@@ -1,6 +1,6 @@
-# 🏠 House Price Prediction (London)
+# 🏠 House Price Prediction (India)
 
-A Django-based web application that predicts house prices in London using a trained machine learning model. The user provides input through a web form, and the app returns the predicted property price based on those features.
+A Django-based web application that predicts house prices in India using a trained machine learning model. The user provides input through a web form, and the app returns the predicted property price based on those features.
 
 ---
 
@@ -8,7 +8,7 @@ A Django-based web application that predicts house prices in London using a trai
 
 - Clean and responsive web interface
 - House price prediction using a trained ML model
-- Based on London housing market data
+- Based on India housing market data
 - HTML templates for `home` and `predict` pages
 - Static assets (e.g. images) for UI enhancement
 
