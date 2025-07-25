@@ -13,7 +13,7 @@ def predict(request):
     return render(request, 'predict.html')
 
 # Chemin absolu vers le fichier CSV
-CSV_PATH = r"C:\Users\Fddkk\PycharmProjects\House Price\USA_Housing.csv"
+CSV_PATH = r"./USA_Housing.csv"
 
 def result(request):
     try:
@@ -37,7 +37,7 @@ def result(request):
 
         # Définition des variables
         X = data.drop('Price', axis=1)
-        y = data['Price']
+        y = data['Price'] * 84
 
         # Vérification si les données sont bien numériques
         if not np.issubdtype(X.dtypes[0], np.number):
@@ -66,7 +66,7 @@ def result(request):
         prediction = round(prediction, 2)
 
         # Affichage du résultat
-        price = f"The predicted house price is: ${prediction:,.2f}"
+        price = f"The predicted house price is: ₹{prediction:,.2f}"
 
     except Exception as e:
         price = f"An error occurred: {str(e)}"

@@ -1,9 +1,9 @@
 """
-WSGI config for HousePred project.
+wsgi config for housepred project.
 
-It exposes the WSGI callable as a module-level variable named ``application``.
+it exposes the wsgi callable as a module-level variable named ``application``.
 
-For more information on this file, see
+for more information on this file, see
 https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
 """
 
